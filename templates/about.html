@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - StarKiz'L Business Turn Real</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #0077ff, #2ec1cc);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            background: url('https://example.com/background-image.jpg') no-repeat center center/cover;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        nav {
+            background-color: #6c7d7e;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #0077ff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .highlight {
+            background-color: #2ec1cc;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .contact-section {
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h2 {
+            color: #000;
+        }
+        footer {
+            background-color: #2ec1cc;
+            color: #030303;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            nav ul {
+                justify-content: flex-end;
+                padding-right: 40px;
+            }
+            main {
+                padding: 80px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>StarKiz'L Business Turn Real</h1>
+    <p>Transformasikan Ide Menjadi Kenyataan</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Beranda</a></li>
+        <li><a href="{{ url_for('about') }}">Tentang Kami</a></li>
+        <li><a href="{{ url_for('business') }}">Produk</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Tentang Kami</h2>
+        <p>StarKiz'L Business Turn Real. Platform inovatif Mahasiswa STEI Hamfara Yogyakarta angkatan 23. Platform ini bertujuan untuk memadukan kreativitas dan teknologi, memberikan kesempatan bagi mahasiswa untuk merealisasikan ide-ide bisnis mereka.</p>
+    </section>
+    <section class="highlight">
+        <h2>Visi dan Misi</h2>
+        <p><strong>Visi:</strong> Menjadi platform bisnis terkemuka yang memotivasi dan memfasilitasi mahasiswa untuk mengembangkan potensi wirausaha mereka.</p>
+        <p><strong>Misi:</strong> Menggunakan inovasi dan teknologi sebagai alat untuk memperkaya pengalaman wirausaha mahasiswa, serta menciptakan dampak positif di masyarakat melalui produk dan layanan unggulan.</p>
+    </section>
+    <section class="contact-section">
+        <h2>Kontak Kami</h2>
+        <p><strong>Alamat:</strong> 574V+4F6, Dsn Kenalan, Bangunjiwo, Kasihan, Kenalan, Bangunjiwo, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55184</p>
+        <p><strong>Telepon:</strong> 0857-2821-1006</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 StarKiz'L Business Turn Real. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
