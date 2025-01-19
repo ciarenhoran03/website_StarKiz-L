@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - StarKiz'L Business Turn Real</title>
+    <meta name="description" content="StarKiz'L Business Turn Real - Platform wirausaha mahasiswa STEI Hamfara Yogyakarta angkatan 23. Menyediakan berbagai produk dan jasa kreatif.">
+    <title>StarKiz'L Business Turn Real</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
-            overflow-x: hidden;
         }
         header {
-            background: linear-gradient(90deg, #0077ff, #2ec1cc);
+            background-color: #d6993d;
             color: #fff;
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
-            position: relative;
+            border-radius: 0 0 10px 10px;
         }
-        header::after {
-            content: '';
-            background: url('https://example.com/background-image.jpg') no-repeat center center/cover;
-            opacity: 0.1;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
+        header img {
+            max-width: 100px; /* Ukuran logo */
+            margin-bottom: 20px;
         }
         nav {
-            background-color: #6c7d7e;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav ul {
             list-style-type: none;
@@ -48,38 +42,48 @@
         }
         nav ul li a {
             color: white;
+            text-align: center;
             padding: 14px 20px;
             text-decoration: none;
             display: block;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s;
         }
         nav ul li a:hover {
             background-color: #555;
+            transform: scale(1.05);
         }
         main {
-            padding: 60px 20px;
-            max-width: 900px;
-            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         section {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
+            padding: 20px; /* Padding untuk keseragaman */
         }
         section h2 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            color: #0077ff;
+            color: #eca409;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 24px; /* Menyamakan ukuran font untuk heading */
         }
         section p {
             font-size: 18px;
             text-align: justify;
+            margin-bottom: 20px;
         }
         .highlight {
-            background-color: #2ec1cc;
-            color: #fff;
+            background-color: #d4c04f;
+            color: #333;
             padding: 20px;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
         }
         .contact-section {
@@ -90,57 +94,48 @@
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .contact-section h2 {
-            color: #000;
-        }
         footer {
-            background-color: #2ec1cc;
-            color: #030303;
+            background-color: #f1c606;
+            color: #524e4e;
             padding: 20px;
             text-align: center;
-        }
-        @media (min-width: 768px) {
-            nav ul {
-                justify-content: flex-end;
-                padding-right: 40px;
-            }
-            main {
-                padding: 80px 40px;
-            }
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="https://assets.kompasiana.com/items/album/2025/01/19/screenshot-20250119-074816-whatsapp-678d1521ed64154ace5d9152.jpg?t=o&v=770" alt="Logo StarKiz'L">
     <h1>StarKiz'L Business Turn Real</h1>
-    <p>Transformasikan Ide Menjadi Kenyataan</p>
 </header>
 
 <nav>
     <ul>
         <li><a href="{{ url_for('home') }}">Beranda</a></li>
-        <li><a href="{{ url_for('about') }}">Tentang Kami</a></li>
         <li><a href="{{ url_for('business') }}">Produk</a></li>
     </ul>
 </nav>
 
-<main>
-    <section>
-        <h2>Tentang Kami</h2>
-        <p>StarKiz'L Business Turn Real. Platform inovatif Mahasiswa STEI Hamfara Yogyakarta angkatan 23. Platform ini bertujuan untuk memadukan kreativitas dan teknologi, memberikan kesempatan bagi mahasiswa untuk merealisasikan ide-ide bisnis mereka.</p>
-    </section>
-    <section class="highlight">
+<main id="home">
+    <p>Selamat datang di StarKiz'L Business Turn Real, platform wirausaha mahasiswa yang menggabungkan kreativitas dan inovasi untuk menciptakan produk dan layanan terbaik. Kami berkomitmen untuk mendukung pertumbuhan wirausaha melalui teknologi dan kreativitas.</p>
+</main>
+
+<section id="about">
+    <h2>Tentang Kami</h2>
+    <p>StarKiz'L Business Turn Real adalah platform inovatif Mahasiswa STEI Hamfara Yogyakarta angkatan 23 yang bertujuan untuk memadukan kreativitas dan teknologi, memberikan kesempatan bagi mahasiswa untuk merealisasikan ide-ide bisnis mereka.</p>
+    <div class="highlight">
         <h2>Visi dan Misi</h2>
         <p><strong>Visi:</strong> Menjadi platform bisnis terkemuka yang memotivasi dan memfasilitasi mahasiswa untuk mengembangkan potensi wirausaha mereka.</p>
         <p><strong>Misi:</strong> Menggunakan inovasi dan teknologi sebagai alat untuk memperkaya pengalaman wirausaha mahasiswa, serta menciptakan dampak positif di masyarakat melalui produk dan layanan unggulan.</p>
-    </section>
-    <section class="contact-section">
+    </div>
+    <div class="contact-section">
         <h2>Kontak Kami</h2>
         <p><strong>Alamat:</strong> 574V+4F6, Dsn Kenalan, Bangunjiwo, Kasihan, Kenalan, Bangunjiwo, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55184</p>
         <p><strong>Telepon:</strong> 0857-2821-1006</p>
-    </section>
-</main>
+    </div>
+</section>
 
 <footer>
     <p>&copy; 2025 StarKiz'L Business Turn Real. All rights reserved.</p>
